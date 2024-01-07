@@ -1,0 +1,38 @@
+{
+  "name": "tamper-monkey-svelte-template",
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "rollup -c -w",
+    "build": "rollup --config --environment PRODUCTION:true",
+    "prebuild": "rimraf dist && rimraf debug",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@tsconfig/svelte": "^5.0.2",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.33",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
+    "rollup": "^4.9.4",
+    "rollup-plugin-css-only": "^4.5.2",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-serve": "^1.1.1",
+    "rollup-plugin-string": "^3.0.0",
+    "rollup-plugin-svelte": "^7.1.6",
+    "svelte": "^4.2.8",
+    "svelte-check": "^3.6.2",
+    "svelte-preprocess": "^5.1.3",
+    "tailwindcss": "^3.4.1",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  }
+}
