@@ -1,7 +1,7 @@
 // refer to https://www.tampermonkey.net/documentation.php?locale=en
 
 export default {
-  name: "App Name"
+  name: "appname",
   metadata: {
     name: "App name",
     namespace: "app-name",
